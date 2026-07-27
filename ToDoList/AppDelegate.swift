@@ -1,10 +1,5 @@
 //
 //  AppDelegate.swift
-//  ToDoList
-//
-//  Created by Kristina Kostenko on 21.10.2025.
-//
-
 import UIKit
 
 @main

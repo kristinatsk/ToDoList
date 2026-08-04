@@ -14,4 +14,8 @@ final class TodoListPresenter: TodoListPresenterProtocol, TodoListInteractorOutp
         view?.updateScreen(with: todos)
     }
     
+    func didTapAddTask() {
+        router?.routeToAddTask()
+    }
+    
 }

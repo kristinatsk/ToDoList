@@ -25,7 +25,7 @@ class CoreDataManager {
                 let entity = ToDoEntity(context: context)
                 
                 entity.id = Int64(todo.id)
-                entity.todo = todo.todo
+                entity.title = todo.todo
                 entity.completed = todo.completed
                 entity.createdAt = todo.createdAt ?? Date()
                 entity.todoDescription = todo.todoDescription ?? "Нет описания"

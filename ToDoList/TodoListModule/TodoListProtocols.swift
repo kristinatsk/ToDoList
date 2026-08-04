@@ -2,6 +2,7 @@ import UIKit
 
 protocol TodoListPresenterProtocol: AnyObject {
     func viewDidLoad()
+    func didTapAddTask()
 }
 
 protocol TodoListViewProtocol: AnyObject {
@@ -18,4 +19,5 @@ protocol TodoListInteractorOutputProtocol: AnyObject {
 
 protocol TodoListRouterProtocol: AnyObject {
     static func getModule() -> UIViewController
+    func routeToAddTask()
 }

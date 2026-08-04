@@ -1,6 +1,8 @@
 import UIKit
 
 final class TodoListRouter: TodoListRouterProtocol {
+    weak var view: UIViewController?
+    
     static func getModule() -> UIViewController {
         let view = TodoListViewController()
         let presenter = TodoListPresenter()
@@ -13,6 +15,13 @@ final class TodoListRouter: TodoListRouterProtocol {
         
         interactor.presenter = presenter
         
+        router.view = view
+        
         return view
+    }
+    
+    //TODO: finish with AddTaskModule
+    func routeToAddTask() {
+        <#code#>
     }
 }
